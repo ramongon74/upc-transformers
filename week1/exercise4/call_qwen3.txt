@@ -1,0 +1,4 @@
+Hello, how can I assist you today?
+---
+usage        : CompletionUsage(completion_tokens=81, prompt_tokens=27, total_tokens=108, completion_tokens_details=None, prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cache_write_tokens=None, cached_tokens=0, image_tokens=None, text_tokens=None))
+finish_reason: stop

@@ -1,0 +1,22 @@
+modelo: ministral-3:8b
+
+--- temperature=0.0
+  1. 'Hello!'  (tokens=3, finish=stop)
+  2. 'Hello!'  (tokens=3, finish=stop)
+  3. 'Hello!'  (tokens=3, finish=stop)
+  4. 'Hello!'  (tokens=3, finish=stop)
+  5. 'Hello!'  (tokens=3, finish=stop)
+
+--- temperature=0.7
+  1. 'Hello there!'  (tokens=4, finish=stop)
+  2. 'Hello!'  (tokens=3, finish=stop)
+  3. 'Greetings! How’s your day going?'  (tokens=11, finish=stop)
+  4. 'Hello there.'  (tokens=4, finish=stop)
+  5. 'Hello!'  (tokens=3, finish=stop)
+
+--- temperature=1.5
+  1. 'Greetings! How’s your day?'  (tokens=10, finish=stop)
+  2. 'Hi! 👋'  (tokens=6, finish=stop)
+  3. "Hello! How's your day going?"  (tokens=9, finish=stop)
+  4. 'Greetings.'  (tokens=5, finish=stop)
+  5. 'Hello!'  (tokens=3, finish=stop)

@@ -1,0 +1,22 @@
+modelo: qwen3:1.7b
+
+--- temperature=0.0
+  1. 'Hello, how can I assist you today?'  (tokens=73, finish=stop)
+  2. 'Hello, how can I assist you today?'  (tokens=73, finish=stop)
+  3. 'Hello, how can I assist you today?'  (tokens=73, finish=stop)
+  4. 'Hello, how can I assist you today?'  (tokens=73, finish=stop)
+  5. 'Hello, how can I assist you today?'  (tokens=73, finish=stop)
+
+--- temperature=0.7
+  1. 'Hello, how can I assist you today?'  (tokens=87, finish=stop)
+  2. ''  (tokens=300, finish=length)
+  3. 'Hello!'  (tokens=112, finish=stop)
+  4. 'Hello, how can I assist you today?'  (tokens=100, finish=stop)
+  5. 'Hello, how can I assist you today?'  (tokens=115, finish=stop)
+
+--- temperature=1.5
+  1. 'Hello, how can I assist you today?'  (tokens=79, finish=stop)
+  2. 'Hello, welcome!'  (tokens=178, finish=stop)
+  3. 'Hello, how can I assist you today?'  (tokens=126, finish=stop)
+  4. 'Hello, how can I assist you today?'  (tokens=102, finish=stop)
+  5. 'Hello, how can I assist you today?'  (tokens=92, finish=stop)

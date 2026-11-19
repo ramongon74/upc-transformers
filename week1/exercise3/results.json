@@ -1,0 +1,45 @@
+{
+  "modelo": "ministral-3:8b",
+  "resultados": {
+    "1. tarea sin ejemplos": {
+      "prompt": "Resume en dos frases por qué el cielo es azul, para un niño de 10 años.",
+      "respuesta": "El cielo es azul porque la luz del sol, que es blanca, choca con las moléculas del aire y se esparce en todas direcciones, como cuando mueves un vaso de agua y se forman burbujas. La luz azul es la que más se dispersa, así que nuestros ojos la ven como el color del cielo cuando miramos hacia arriba. 🌍✨",
+      "segundos": 17.2
+    },
+    "2. regla inventada (few-shot)": {
+      "prompt": "Regla secreta. Ejemplos:\nluna -> aunl\nsol -> los\nmar -> ram\nAplica la misma regla a: gato ->",
+      "respuesta": "La regla secreta parece consistir en **reordenar las letras de la palabra original para formar una nueva palabra o conjunto de letras que suenan similares o tienen relación fonética o semántica**.\n\nPara **\"gato\"**, aplicando una lógica similar a los ejemplos anteriores (reordenar las letras para formar una palabra que suene o se relacione con el significado), una posible solución sería:\n\n**gato → tago**\n\n*(Aunque \"tago\" no es una palabra común en español, podrías interpretarlo como una variación fonética o jugar con la idea de que las letras se reordenan para crear algo similar a un sonido o concepto relacionado, como \"tago\" como una forma de \"agotar\" o \"atago\" (aunque esto es especulativo).*\n\n---\n**Otra posibilidad más creativa (basada en los ejemplos dados):**\nEn los ejemplos anteriores:\n- **luna → aunl** (reordenar para formar \"aún\" + \"l\", pero no es una palabra).\n- **sol → los** (reordenar para formar \"los\" como en \"los rayos del sol\").\n- **mar → ram** (reordenar para formar \"ram\" como en \"rama\" o \"ramo\").\n\nSi aplicamos esto a **\"gato\"**, podrías pensar en:\n**gato → otag** (no es una palabra, pero si consideramos que \"otag\" podría ser una forma de \"otago\" —nombre propio— o jugar con las letras para crear algo como \"otago\" como \"otago\" en maorí, que significa \"lugar de la muerte\" —no es exacto, pero es un juego de letras—).\n\n---\n**Alternativa más lógica (basada en la estructura de los ejemplos):**\nSi la regla es **tomar la primera letra de la palabra y moverla al final**, como en:\n- **luna** → **l** + \"una\" → **aunl** (pero no es una palabra).\n- **sol** → **s** + \"ol\" → **sol** (no cambia, pero \"los\" es \"l\" + \"os\").\n- **mar** → **m** + \"ar\" → **mar** (no cambia, pero \"ram\" es \"r\" + \"am\").\n\nEn ese caso, para **\"gato\"**:\n- **g** + \"ato\" → **\"gato\"** (no cambia).\n- O **a** + \"tog\" → **\"atog\"** (no es una palabra).\n\n---\n**Posible solución más probable (basada en los ejemplos):**\nSi la regla es **reordenar las letras para formar una palabra que suene similar o tenga relación con el significado original**, podrías pensar en:\n**gato → tago** (como una variación de \"tago\" o \"tag\" + \"o\", aunque no es una palabra común).\n\n---\n**Conclusión:**\nNo hay una regla 100% clara con los ejemplos dados, pero la opción más cercana a los patrones sería:\n**gato → tago** (aunque no es una palabra estándar, es un reordenamiento de letras).\n\nSi tienes más ejemplos o aclaras la regla, puedo ajustar mejor la respuesta. ¿Quieres que intente otra lógica?",
+      "segundos": 121.9
+    },
+    "3. formato estricto (JSON)": {
+      "prompt": "Devuelve SOLO un JSON válido, sin texto adicional ni markdown, con los campos \"pais\", \"capital\" y \"habitantes_aprox\" para Japón.",
+      "respuesta": "```json\n{\n  \"pais\": \"Japón\",\n  \"capital\": \"Tokio\",\n  \"habitantes_aprox\": 125000000\n}\n```",
+      "segundos": 8.7
+    },
+    "4. otro idioma": {
+      "prompt": "Explica en català què és un token en un model de llenguatge, en tres línies.",
+      "respuesta": "Un **token** en un model de llenguatge és la unitat més petita que el model utilitza per processar el text, com ara paraules, frases o caràcters dividits (segons el *tokenizer*).\n\nServeix com a \"codi\" que el model entén per analitzar i generar text, convertint el llenguatge humà en dades que pot processar.\n\nPer exemple, la frase *\"bon dia\"* pot dividir-se en tokens com *\"bon\"*, *\"dia\"* o fins i tot en parts més petites si el model ho requereix.",
+      "segundos": 23.9
+    },
+    "5. código": {
+      "prompt": "Escribe en Python una función que diga si una cadena es un palíndromo ignorando espacios y mayúsculas, con dos tests.",
+      "respuesta": "Aquí tienes una función en Python que verifica si una cadena es un palíndromo ignorando espacios y mayúsculas, junto con dos tests de ejemplo:\n\n```python\ndef es_palindromo(cadena):\n    \"\"\"\n    Verifica si una cadena es un palíndromo ignorando espacios y mayúsculas.\n\n    Args:\n        cadena (str): La cadena a verificar.\n\n    Returns:\n        bool: True si es palíndromo, False en caso contrario.\n    \"\"\"\n    # Eliminar espacios y convertir a minúsculas\n    cadena_limpia = ''.join(cadena.split()).lower()\n    # Comparar la cadena con su reversa\n    return cadena_limpia == cadena_limpia[::-1]\n\n# Tests\n# Test 1: Cadena palíndromo con espacios y mayúsculas\ntest1 = \"A man, a plan, a canal: Panama\"\nassert es_palindromo(test1) == True, f\"Test 1 fallido: '{test1}' debería ser True\"\n\n# Test 2: Cadena no palíndromo\ntest2 = \"Hello, World!\"\nassert es_palindromo(test2) == False, f\"Test 2 fallido: '{test2}' debería ser False\"\n\nprint(\"Todos los tests pasaron correctamente.\")\n```\n\n### Explicación:\n1. **`es_palindromo(cadena)`**:\n   - `cadena.split()`: Elimina los espacios.\n   - `''.join(...)`: Une los caracteres sin espacios.\n   - `.lower()`: Convierte todo a minúsculas para ignorar mayúsculas.\n   - `cadena_limpia[::-1]`: Invierte la cadena para comparar.\n\n2. **Tests**:\n   - **Test 1**: `\"A man, a plan, a canal: Panama\"` es un palíndromo clásico (ignora espacios, signos y mayúsculas).\n   - **Test 2**: `\"Hello, World!\"` no es un palíndromo.\n\nSi ejecutas este código, verás que ambos tests pasan. 😊",
+      "segundos": 83.9
+    },
+    "6a. confiadamente equivocado (letras)": {
+      "prompt": "¿Cuántas letras 'r' hay en la palabra 'strawberry'?",
+      "respuesta": "En la palabra **\"strawberry\"**, hay **2 letras 'r'**.",
+      "segundos": 6.0
+    },
+    "6b. confiadamente equivocado (inexistente)": {
+      "prompt": "Resume el argumento del libro 'La biblioteca de cristal de Anselmo Ferrán' (2011) y cita su primer párrafo.",
+      "respuesta": "**Resumen del argumento de *La biblioteca de cristal* (2011) de Anselmo Ferrán:**\n\n*La biblioteca de cristal* es una novela que explora temas como la memoria, el tiempo, la identidad y la fragilidad de la realidad a través de una narrativa fragmentada y metaficcional. La trama se centra en **Javier**, un hombre que, tras un accidente, pierde la memoria y es ingresado en un hospital. Allí, conoce a **Lucía**, una enfermera que se convierte en su cuidadora y confidente. A medida que Javier recupera fragmentos de su pasado, descubre que su vida está ligada a un misterio más profundo: una biblioteca oculta en su apartamento, llena de libros que parecen contener claves sobre su existencia y la de otros personajes.\n\nLa novela juega con la estructura del cuento y la novela corta, mezclando realidades paralelas, referencias literarias y una atmósfera onírica. Ferrán cuestiona la naturaleza de la narrativa misma, cómo los relatos se construyen y cómo la memoria puede ser manipulada. El título hace referencia a la idea de una biblioteca como espacio de cristal (frágil y transparente), símbolo de la efimeridad de las historias y la subjetividad de la verdad.\n\n---\n\n**Primer párrafo de *La biblioteca de cristal*:**\n*\"El hombre que no recuerda su nombre abre los ojos en un cuarto blanco, como si el tiempo hubiera sido borrado de las paredes. Sobre la mesilla, una taza de café frío y un periódico doblado, pero no hay fecha. Solo el eco de su propia respiración, lenta y irregular, como si el cuerpo aún no supiera que está vivo.\"*\n\n---\n*Nota:* Si necesitas más detalles sobre personajes, simbolismo o análisis temático, ¡avísame! Ferrán es conocido por su estilo lírico y su juego con la narrativa, así que hay mucho que profundizar.",
+      "segundos": 58.4
+    },
+    "6c. confiadamente equivocado (aritmética)": {
+      "prompt": "Calcula 48217 * 3906 y da solo el resultado.",
+      "respuesta": "18,768,607,22",
+      "segundos": 2.9
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "modelo": "ministral-3:8b",
+  "prompt": "Regla secreta. Ejemplos:\nluna -> anul\nsol -> los\nmar -> ram\nAplica la misma regla a: gato ->",
+  "respuesta": "La regla que aplicas en los ejemplos parece ser la siguiente:\n\n**Se toma la primera letra de la palabra y se la coloca al final, manteniendo el resto de las letras en el mismo orden.**\n\nAplicando esto a **\"gato\"**:\n- Primera letra: **g**\n- Resto de la palabra: **ato**\n- Resultado: **ato + g = atog**\n\n**gato → atog**",
+  "segundos": 11.5
+}
